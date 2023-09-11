@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+</head>
+<body>
+  <div class="container clearfix">
+    <header class="header">
+      <h1 class="sr-only">Dashboard</h1>
+      <div class="inner">
+        <div class="header__left">
+          <span class="today"></span>
+        </div>
+        <form action="/" class="form-search">
+          <input type="search" class="input" name="" id="" placeholder="Search...">
+        </form>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <div class="inner">
+        <div class="nav__top">
+          <a href="/" class="logo">
+            <img src="./images/logo.svg" alt="dashboard" />
+          </a>
+          <button class="nav-toggle" title="메뉴접기">닫기</button>
+        </div>
+
+        <button class="btn btn--report">Report</button>
+        
+        <span class="nav--subtext">menu</span>
+        <ul class="nav__ul">
+          <li class="nav__li" data-icon="overview">
+            
+            <a href="javascript:;"><span></span>Overview</a>
+          </li>
+          <li class="nav__li" data-icon="research">
+            
+            <a href="javascript:;"><span></span>Research</a>
+          </li>
+          <li class="nav__li" data-icon="reports">
+            <a href="javascript:;"><span></span>Reports</a>
+          </li>
+          <li class="nav__li" data-icon="overview">
+            <a href="" class="overview-acco active">
+              <span></span>Teams
+              <img src="./images/ico-arrow.png" alt="열기">
+            </a>
+            <ul class="nav__li-sub">
+              <li>
+                <a href="javascript:;">Analytics</a>
+              </li>
+              <li>
+                <a href="javascript:;">Design</a>
+              </li>
+              <li>
+                <a href="javascript:;">Engineering</a>
+              </li>
+              <li>
+                <a href="javascript:;">Marketing</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__li" data-icon="notifications">
+            <a href="javascript:;"><span></span>Notifications</a>
+          </li>
+          <li class="nav__li" data-icon="setting">
+            <a href="javascript:;"><span></span>Settings</a>
+          </li>
+        </ul>
+
+        <article class="user-profile">
+          <span class="nav--subtext">profile</span>
+          <div class="user-flex">
+            <img src="./images/tumb/tumb_avata.png" alt="Janny Wilson">
+            <div class="user-info">
+              <span class="user-name">Jenny Wilson</span>
+              <span class="user-email">jen12@gmail.com</span>
+            </div>
+          </div>
+        </article>
+
+        <button class="btn btn--logout">Log Out</button>
+
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="inner">
+        <section class="bar-wrap"></section>
+        <section class="arc-wrap"></section>
+        <section class="area-line"></section>
+        <section class="map-wrap"></section>
+        <section class="circle-wrap"></section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
